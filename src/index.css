@@ -1,21 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Custom Audio Player Styles */
 audio::-webkit-media-controls-panel {
@@ -24,25 +9,25 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button {
-  background-color: #3B82F6; /* blue-500 */
+  background-color: #3b82f6; /* blue-500 */
   border-radius: 9999px;
 }
 
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display {
-  color: #F3F4F6; /* gray-100 */
+  color: #f3f4f6; /* gray-100 */
 }
 
 audio::-webkit-media-controls-timeline,
 audio::-webkit-media-controls-volume-slider {
-  background-color: #4B5563; /* gray-600 */
+  background-color: #4b5563; /* gray-600 */
   border-radius: 9999px;
   height: 4px;
 }
 
 audio::-webkit-media-controls-timeline:hover,
 audio::-webkit-media-controls-volume-slider:hover {
-  background-color: #6B7280; /* gray-500 */
+  background-color: #6b7280; /* gray-500 */
 }
 
 /* Dark color scheme for the audio player */
@@ -52,11 +37,8 @@ audio {
 
 /* Scrollbar Styles */
 
-
 /* Firefox support */
 * {
   scrollbar-width: thin;
   scrollbar-color: #404080 #282938;
-  
 }
-
